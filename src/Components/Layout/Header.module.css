@@ -1,4 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+/*---Animation KeyFrames Start---*/
+@keyframes zoomInOut{
+  0%,100%{
+      transform: scale(1);
+  }
+  50%{
+      transform:scale(1.2);
+  }
+}
+
+@keyframes colorChange {
+  50% {color: rgb(66, 55, 55);}
+}
+
 .header {
     font-family: 'Style Script', cursive;
     position: fixed;
@@ -7,13 +22,18 @@
     width: 100%;
     height: 5rem;
     background-color: rgb(27, 22, 22);
-    color: white;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     z-index: 10;
+    
+  }
+  .header h1{
+    color: white;
+    animation: colorChange 5s infinite;
   }
   
   .main-image {
@@ -21,6 +41,7 @@
     height: 25rem;
     z-index: 0;
     overflow: hidden;
+    animation: zoomInOut 20s ease infinite;
   }
   
   .main-image img {

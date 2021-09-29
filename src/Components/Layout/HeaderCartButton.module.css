@@ -30,6 +30,7 @@
     border-radius: 25px;
     margin-left: 1rem;
     font-weight: bold;
+    animation: bump 300ms ease-out;
   }
   
   .button:hover .badge,
