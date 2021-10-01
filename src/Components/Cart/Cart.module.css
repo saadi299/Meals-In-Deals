@@ -19,28 +19,28 @@
     text-align: right;
   }
   
-  .actions button {
+  button {
     font: inherit;
     cursor: pointer;
     background-color: transparent;
-    border: 1px solid rgb(27, 22, 22);
     padding: 0.5rem 2rem;
     border-radius: 25px;
     margin-left: 1rem;
+    border: 1px solid rgb(27, 22, 22);
   }
   
-  .actions button:hover,
-  .actions button:active {
+  button:hover,
+  button:active {
     background-color: rgb(49, 39, 39);
     border-color: rgb(49, 39, 39);
     color: white;
   }
   
-  .actions .button--alt {
+  .button--alt {
     color: rgb(27, 22, 22);
   }
   
-  .actions .button {
+  .button {
     background-color: rgb(27, 22, 22);
     color: white;
   }
